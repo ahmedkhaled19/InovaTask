@@ -22,11 +22,7 @@ class MainViewModel @ViewModelInject constructor(private val trainingHelper: Tra
         MutableLiveData<TrainingSeries>()
     }
 
-    init {
-        loadTrainingSeries()
-    }
-
-    private fun loadTrainingSeries() {
+    fun loadTrainingSeries() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 trainingHelper.getTrainingSeries(getApplication<Application>().applicationContext) { trainingSeries, errorMessage ->

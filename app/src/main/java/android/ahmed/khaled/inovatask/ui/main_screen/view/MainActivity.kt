@@ -25,10 +25,11 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         setupObservers()
+        viewModel.loadTrainingSeries()
     }
 
     private fun setupObservers() {
-        viewModel.trainingSeriesLiveData.observe(this, Observer {
+        viewModel.trainingSeriesLiveData.observe(this, {
             setDataIntoView(it!!)
         })
     }
@@ -37,9 +38,12 @@ class MainActivity : BaseActivity() {
         Glide.with(this)
             .load(trainingSeries.coverPath)
             .into(binding.activityMainCoverPhoto)
+
+        binding.activityMainTrainingSeriesName.text = trainingSeries.name
+
     }
 
-    override fun getBaseViewModel(): BaseViewModel? {
+    override fun getBaseViewModel(): BaseViewModel {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         return viewModel
     }
