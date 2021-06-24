@@ -1,13 +1,15 @@
 package android.ahmed.khaled.inovatask.bases
 
 import android.ahmed.khaled.inovatask.common.SingleLiveEvent
+import android.app.Application
 import android.content.Intent
 import androidx.databinding.Observable
 import androidx.databinding.PropertyChangeRegistry
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 
 
-open class BaseViewModel() : ViewModel(), Observable {
+open class BaseViewModel() : AndroidViewModel(Application()), Observable {
 
     private val registry = PropertyChangeRegistry()
 

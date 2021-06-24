@@ -1,7 +1,6 @@
 package android.ahmed.khaled.inovatask.bases
 
 import android.ahmed.khaled.inovatask.utils.UiUtils
-import android.ahmed.khaled.movieapp.utils.UiUtils
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
