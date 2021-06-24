@@ -1,0 +1,37 @@
+{
+    "name": "The Challenge",
+    "cover_url": "https://i.pinimg.com/originals/3f/48/39/3f483945d8212fbef42512cbff59908e.jpg",
+    "overview":"Rollers come in many shapes, sizes, colors, and types of material. And with each of those different types of rollers come many different functions. Just like none of our bodies are the same, not all rollers are created equal. Although the sheer variety of rollers can sometimes be confusing, you optimize your body’s benefits from the many roller options available to you.",
+    "coaches": [
+	    {
+	    	"name": "Dan Mathison",
+	    	"overview": "Strong leadership skills to hold the attention and respect of dozens of children -Exceptional speaking skills to convey information effectively, especially during a game -Ability to make decisions to decide what positions players should have -Problem solving skills to listen to concerns of players and parents and reach an amicable solution -Great time management knowledge so practice time is used effectively -Monitoring abilities to keep an eye on every player so no one runs off on their own"
+	    }
+    ],
+    "classes":[
+    	{
+    	 	"name":"How To get ready for this series",
+    	 	"duration":"1:11",
+    	 	"video_link":""
+    	},
+    	{
+			"name":"Day 1 : Upper body strength",
+    	 	"duration":"30:27",
+    	 	"video_link":""
+    	}
+    ],
+    "community":[
+    	{
+    	 	"writer":"Gordon Miller",
+    	 	"post":"this is awesome"
+    	},
+    	{
+			"writer":"Austin Blake",
+    	 	"post":"this is awesome 2"
+    	},
+    	{
+			"writer":"Lucas	Dickens",
+    	 	"post":"this is awesome 3"
+    	}
+    ]
+}
